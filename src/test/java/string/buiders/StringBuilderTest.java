@@ -11,7 +11,7 @@ public class StringBuilderTest {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("aaaaa");
         stringBuilder.append("bbbbb");
-        Assertions.assertEquals("", stringBuilder.toString());
+        Assertions.assertEquals("aaaaabbbbb", stringBuilder.toString());
     }
 
     @Test
@@ -19,7 +19,7 @@ public class StringBuilderTest {
         StringBuilder stringBuilder = new StringBuilder(",");
         stringBuilder.append("aaaaa");
         stringBuilder.append("bbbbb");
-        Assertions.assertEquals("", stringBuilder.toString());
+        Assertions.assertEquals(",aaaaabbbbb", stringBuilder.toString());
     }
 
 }
